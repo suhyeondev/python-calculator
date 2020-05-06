@@ -27,8 +27,8 @@ rightParenthesis=Button(cal, height=1, width=3, bd=7, fg="white", bg="gray", fon
             text=")", command=lambda:btnClick(")")).grid(row=1, column=1)
 percent=Button(cal, height=1, width=3, bd=7, fg="white", bg="gray", font=('Courier New', 20, 'bold'),
             text="%", command=lambda:btnClick('%')).grid(row=1, column=2)
-point=Button(cal, height=1, width=3, bd=7, fg="white", bg="gray", font=('Courier New', 20, 'bold'),
-            text=".", command=lambda:btnClick(".")).grid(row=1, column=3)
+Equal=Button(cal, height=1, width=3, bd=7, fg="white", bg="red", font=('Courier New', 20, 'bold'),
+            text="=", command = Equal).grid(row=1, column=3)
 
 btn7=Button(cal, height=1, width=3, bd=7, fg="white", bg="black", font=('Courier New', 20, 'bold'),
             text="7", command=lambda:btnClick(7)).grid(row=2, column=0)
@@ -61,8 +61,8 @@ Clear=Button(cal, height=1, width=3, bd=7, fg="white", bg="gray", font=('Courier
             text="C", command = Clear).grid(row=5, column=0)
 btn0=Button(cal, height=1, width=3, bd=7, fg="white", bg="black", font=('Courier New', 20, 'bold'),
             text="0", command = lambda:btnClick(0)).grid(row=5, column=1)
-Equal=Button(cal, height=1, width=3, bd=7, fg="white", bg="red", font=('Courier New', 20, 'bold'),
-            text="=", command = Equal).grid(row=5, column=2)
+point=Button(cal, height=1, width=3, bd=7, fg="white", bg="gray", font=('Courier New', 20, 'bold'),
+            text=".", command=lambda:btnClick(".")).grid(row=5, column=2)
 btnDiv=Button(cal, height=1, width=3, bd=7, fg="white", bg="gray", font=('Courier New', 20, 'bold'),
             text="/", command = lambda:btnClick('/')).grid(row=5, column=3)
 
